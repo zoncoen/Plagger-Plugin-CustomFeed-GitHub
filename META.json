@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Custom feed for GitHub",
    "author" : [
       "zoncoen <zoncoen@gmail.com>"
    ],
@@ -42,6 +42,9 @@
       },
       "runtime" : {
          "requires" : {
+            "LWP::Protocol::https" : "0",
+            "LWP::UserAgent" : "0",
+            "Plagger" : "0",
             "perl" : "5.008001"
          }
       },
@@ -52,5 +55,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/zoncoen/Plagger-Plugin-CustomFeed-GitHub/issues"
+      },
+      "homepage" : "https://github.com/zoncoen/Plagger-Plugin-CustomFeed-GitHub",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/zoncoen/Plagger-Plugin-CustomFeed-GitHub.git",
+         "web" : "https://github.com/zoncoen/Plagger-Plugin-CustomFeed-GitHub"
+      }
+   },
    "version" : "0.01"
 }

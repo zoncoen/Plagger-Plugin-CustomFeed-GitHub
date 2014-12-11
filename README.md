@@ -1,14 +1,18 @@
 # NAME
 
-Plagger::Plugin::CustomFeed::GitHub - It's new $module
+Plagger::Plugin::CustomFeed::GitHub - Custom feed for GitHub
 
 # SYNOPSIS
 
-    use Plagger::Plugin::CustomFeed::GitHub;
+    - module: CustomFeed::GitHubFeed
+        config:
+          token: {github_api_token}
+          users:
+            - {github_username}
 
 # DESCRIPTION
 
-Plagger::Plugin::CustomFeed::GitHub is ...
+Plagger::Plugin::CustomFeed::GitHub fetches public timeline for any user.
 
 # LICENSE
 
